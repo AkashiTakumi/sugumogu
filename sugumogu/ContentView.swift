@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  sugumogu
-//
-//  Created by AkashiTakumi on 2024/06/18.
-//
-
 import SwiftUI
 import SwiftData
 
