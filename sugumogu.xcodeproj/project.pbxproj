@@ -15,6 +15,9 @@
 		2B76954A2C20A13C00264B10 /* sugumoguTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7695492C20A13C00264B10 /* sugumoguTests.swift */; };
 		2B7695542C20A13C00264B10 /* sugumoguUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7695532C20A13C00264B10 /* sugumoguUITests.swift */; };
 		2B7695562C20A13C00264B10 /* sugumoguUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7695552C20A13C00264B10 /* sugumoguUITestsLaunchTests.swift */; };
+		B307F9672C31061E0039174B /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = B307F9662C31061E0039174B /* GoogleMaps */; };
+		B3D06A312C31A5F300EE2237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D06A302C31A5F300EE2237 /* AppDelegate.swift */; };
+		B3D06A342C31A6B300EE2237 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D06A332C31A6B300EE2237 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 		2B76954F2C20A13C00264B10 /* sugumoguUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sugumoguUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7695532C20A13C00264B10 /* sugumoguUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sugumoguUITests.swift; sourceTree = "<group>"; };
 		2B7695552C20A13C00264B10 /* sugumoguUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sugumoguUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3D06A302C31A5F300EE2237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3D06A332C31A6B300EE2237 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B307F9672C31061E0039174B /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +102,13 @@
 		2B7695352C20A13A00264B10 /* sugumogu */ = {
 			isa = PBXGroup;
 			children = (
+				B3D06A322C31A69500EE2237 /* Maps */,
 				2B7695362C20A13A00264B10 /* sugumoguApp.swift */,
 				2B7695382C20A13A00264B10 /* ContentView.swift */,
 				2B76953A2C20A13A00264B10 /* Item.swift */,
 				2B76953C2C20A13B00264B10 /* Assets.xcassets */,
 				2B76953E2C20A13B00264B10 /* Preview Content */,
+				B3D06A302C31A5F300EE2237 /* AppDelegate.swift */,
 			);
 			path = sugumogu;
 			sourceTree = "<group>";
@@ -130,6 +138,14 @@
 			path = sugumoguUITests;
 			sourceTree = "<group>";
 		};
+		B3D06A322C31A69500EE2237 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B3D06A332C31A6B300EE2237 /* MapView.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +162,9 @@
 			dependencies = (
 			);
 			name = sugumogu;
+			packageProductDependencies = (
+				B307F9662C31061E0039174B /* GoogleMaps */,
+			);
 			productName = sugumogu;
 			productReference = 2B7695332C20A13A00264B10 /* sugumogu.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 2B76952A2C20A13A00264B10;
+			packageReferences = (
+				B307F9652C31061E0039174B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			productRefGroup = 2B7695342C20A13A00264B10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D06A312C31A5F300EE2237 /* AppDelegate.swift in Sources */,
 				2B7695392C20A13A00264B10 /* ContentView.swift in Sources */,
+				B3D06A342C31A6B300EE2237 /* MapView.swift in Sources */,
 				2B76953B2C20A13A00264B10 /* Item.swift in Sources */,
 				2B7695372C20A13A00264B10 /* sugumoguApp.swift in Sources */,
 			);
@@ -351,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -408,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -426,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sugumogu/Preview Content\"";
-				DEVELOPMENT_TEAM = 94CY3U8PPN;
+				DEVELOPMENT_TEAM = 4R4QWTMDQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -434,6 +458,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sugumogu/Preview Content\"";
-				DEVELOPMENT_TEAM = 94CY3U8PPN;
+				DEVELOPMENT_TEAM = 4R4QWTMDQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -463,6 +488,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B307F9652C31061E0039174B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B307F9662C31061E0039174B /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B307F9652C31061E0039174B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B76952B2C20A13A00264B10 /* Project object */;
 }
