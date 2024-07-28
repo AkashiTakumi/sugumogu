@@ -102,6 +102,8 @@
 		2B7695352C20A13A00264B10 /* sugumogu */ = {
 			isa = PBXGroup;
 			children = (
+				B3A102532C56BBB900AD46E8 /* New Group */,
+				B32584942C3B03E900C8B47A /* Stores */,
 				B3D06A322C31A69500EE2237 /* Maps */,
 				2B7695362C20A13A00264B10 /* sugumoguApp.swift */,
 				2B7695382C20A13A00264B10 /* ContentView.swift */,
@@ -136,6 +138,20 @@
 				2B7695552C20A13C00264B10 /* sugumoguUITestsLaunchTests.swift */,
 			);
 			path = sugumoguUITests;
+			sourceTree = "<group>";
+		};
+		B32584942C3B03E900C8B47A /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		B3A102532C56BBB900AD46E8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		B3D06A322C31A69500EE2237 /* Maps */ = {
