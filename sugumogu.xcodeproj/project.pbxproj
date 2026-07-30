@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6C1BC12C2F246100BF0206 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2B6C1BC02C2F246100BF0206 /* GoogleMaps */; };
 		2B7695372C20A13A00264B10 /* sugumoguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7695362C20A13A00264B10 /* sugumoguApp.swift */; };
 		2B7695392C20A13A00264B10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7695382C20A13A00264B10 /* ContentView.swift */; };
 		2B76953B2C20A13A00264B10 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76953A2C20A13A00264B10 /* Item.swift */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6C1BC12C2F246100BF0206 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = sugumogu;
+			packageProductDependencies = (
+				2B6C1BC02C2F246100BF0206 /* GoogleMaps */,
+			);
 			productName = sugumogu;
 			productReference = 2B7695332C20A13A00264B10 /* sugumogu.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 2B76952A2C20A13A00264B10;
+			packageReferences = (
+				2B6C1BBF2C2F246100BF0206 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			productRefGroup = 2B7695342C20A13A00264B10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B6C1BBF2C2F246100BF0206 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B6C1BC02C2F246100BF0206 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B6C1BBF2C2F246100BF0206 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B76952B2C20A13A00264B10 /* Project object */;
 }
